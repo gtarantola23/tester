@@ -5,7 +5,7 @@ function saveCheckboxValue() {
 
 window.onload = function() {
   const checkbox = document.getElementById("myCheckbox");
-  const storedValue = window.localStorage.getItem("myCheckboxValue");
+  const storedValue = window.globalStorage.getItem("myCheckboxValue");
   if (storedValue === "true") {
     checkbox.checked = true;
   }
